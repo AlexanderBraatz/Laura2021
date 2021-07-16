@@ -2,35 +2,61 @@
     --white1: #fffffe;
     --blueDark: #00446a;
     --blueLight: #60b6d5;
-    }
+}
     
 body {
     background-color: var(--white1);
     font-family: 'Cabin', sans-serif;
+    margin:0 auto;
+    max-width: 1850px; 
 }
 
 .card{
-    border-radius: 30px;
-    width: 18rem;
+    border-radius: 60px;
+    width: 33.4rem;
+    height: 42rem;
     background-color: var(--white1);
+    margin: 0 auto;
+}
+
+.card-body{
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .card img{
-    border-top-left-radius: 30px; 
-    border-top-right-radius: 30px;   
+    border-top-left-radius: 60px; 
+    border-top-right-radius: 60px; 
+    height: 17.7rem;  
 }
 
 .card h5{
     color: var(--blueDark) ;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 .card p{
-    font-size: 0.8rem;
-
+    font-size: 1.5rem;
 }
+
 .card .btn{
     border-color: var(--blueLight);
     color: var(--blueLight);
-    font-size: 0.7rem;
+    font-size: 1.2rem;
+    padding: 0.9rem 2.3rem 0.9rem 2.3rem;
+}
+
+.card .btn:hover{
+    background-color: var(--blueLight);
+    color: var(--blueDark) ;
+}
+
+.cardList > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.4rem, 1fr));
+    grid-gap: 5rem;
+    padding: 0;
 }
 
